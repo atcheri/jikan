@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { time } from "../store/time";
+  import { time, zonedDate } from "../store/time";
 
   const formatter = new Intl.DateTimeFormat("en", {
     hour12: false,
@@ -7,11 +7,19 @@
     minute: "2-digit",
     second: "2-digit",
   });
+
+  $: hours = $zonedDate.getHours();
+  $: minutes = $zonedDate.getMinutes();
+  $: seconds = $zonedDate.getSeconds();
 </script>
 
 <div>
   Clock show time!
   <h1>The time is {formatter.format($time)}</h1>
+  <div>{hours}</div>
+  <div>{minutes}</div>
+  <div>{seconds}</div>
+  <div />
 </div>
 
 <style>
