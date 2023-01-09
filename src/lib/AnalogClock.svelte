@@ -1,4 +1,5 @@
 <script lang="ts">
+  const hours = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 </script>
 
 <div
@@ -7,7 +8,15 @@
   <div
     class="analog-clock clock-shadow relative flex justify-center items-center w-[450px] h-[450px] rounded-full
     before:content-[''] before:bg-gray-900 before:h-3 before:w-3 before:absolute before:border-solid before:border-white before:border-2 before:rounded-full"
-  />
+  >
+    {#each hours as h}
+      <span
+        class="absolute inset-5 text-center text-gray-500 bold text-2xl rotate-[{h *
+          30}deg]"
+        ><b class="inline-block rotate-[{360 - h * 30}deg]">{h}</b></span
+      >
+    {/each}
+  </div>
 </div>
 
 <style>
