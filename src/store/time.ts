@@ -9,7 +9,7 @@ export const zones = [
   "America/New_York",
 ];
 
-const zone = readable(zones[0]);
+export const zone = writable(zones[0]);
 
 // export const time = readable(new Date(), function start(set) {
 export const time = readable(new Date(), function start(set) {

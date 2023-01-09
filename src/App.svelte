@@ -1,6 +1,7 @@
 <script lang="ts">
   import AnalogClock from "./lib/AnalogClock.svelte";
   import DigitalClock from "./lib/DigitalClock.svelte";
+  import TimeZones from "./lib/TimeZones.svelte";
 </script>
 
 <main
@@ -8,4 +9,5 @@
 >
   <AnalogClock />
   <DigitalClock />
+  <TimeZones />
 </main>
