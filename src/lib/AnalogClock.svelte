@@ -4,7 +4,6 @@
   $: seconds = $zonedDate.getSeconds() * 6 + 360;
   $: minutes = $zonedDate.getMinutes() * 6;
   $: hours = $zonedDate.getHours() * 30 + $zonedDate.getMinutes() * 0.5;
-  $zonedDate.getMinutes() / 12 + 180;
 
   const circleStyle =
     "absolute flex justify-center items-start border-2 border-solid border-indigo-700 border-opacity-30 rounded-full";
@@ -81,10 +80,6 @@
 
 <style>
   .clock-shadow {
-    /* box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
-      inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-      inset 5px 5px 20px rgba(0, 0, 0, 0.2),
-      inset -5px -5px 15px rgba(0, 0, 0, 0.75); */
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.05),
       20px 20px 20px rgba(0, 0, 0, 0.3),
       inset -8px -8px 15px rgba(255, 255, 255, 0.05),
