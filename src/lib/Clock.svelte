@@ -1,5 +1,6 @@
 <script lang="ts">
   import { time, zonedDate } from "../store/time";
+  import AnalogClock from "./AnalogClock.svelte";
 
   const formatter = new Intl.DateTimeFormat("en", {
     hour12: false,
@@ -20,6 +21,7 @@
   <div>{minutes}</div>
   <div>{seconds}</div>
   <div />
+  <AnalogClock />
 </div>
 
 <style>
