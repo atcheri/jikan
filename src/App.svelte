@@ -1,13 +1,11 @@
 <script lang="ts">
-  import Clock from "./lib/Clock.svelte";
+  import AnalogClock from "./lib/AnalogClock.svelte";
 </script>
 
 <main
-  class="flex flex-col justify-center items-center bg-gray-900 h-screen text-slate-100"
+  class="flex flex-col justify-center items-center bg-gray-900 h-screen w-screen text-slate-100"
 >
-  <h1>Vite + Svelte + TS + Tailwindcss</h1>
-  <h2>Starter kit</h2>
-  <Clock />
+  <AnalogClock />
 </main>
 
 <style>
